@@ -8,9 +8,13 @@ h1{
     color: #D8E8DFff;
     font-family: 'Lobster', cursive;
     background-color: #AA8975ff;
+    text-align: center;
 }
 h2{
     background-color: #AA8975ff;
+}
+img{
+    height: 280px;
 }
 p{
     font-family: 'Balsamiq Sans', cursive;
@@ -33,4 +37,24 @@ a{
 }
 .php{
     font-size: 100px;
+}
+#minha_foto{
+    float: left;
+    padding: 10px;
+    background-color: #AA8975ff;
+}
+.image-container{
+    height: 300px;
+    position: relative;
+}
+.descrficao{
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    /*right: 40%;*/
+    margin: 2px;
+    padding: 50px;
+}
+ul li:nth-child(odd){
+    background-color: #AA8975ff;
 }
