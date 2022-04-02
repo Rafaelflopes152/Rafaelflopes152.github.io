@@ -1,17 +1,69 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Balsamiq Sans', cursive;
+    color: #1E1E2A;
+}
 body{
     background-color: #CFE2E1ff;
 }
+.header-container{
+    height: 100vw;
+    width: 100vw;
+    background-color: #CFE2E1ff;
+    background-image: url("imagens/banner.jpg");
+    /* background-image: url("imagens/perfil.jpg"); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    box-sizing: border-box;
+    padding: 0 112px;
+    position: relative;
+}
+.social-midia{
+    margin-top: 1rem;
+    display: flex;
+}
+.social-midia a{
+    text-decoration: none;
+    color: #1E1E2A;
+    padding: 1rem 4rem;
+    border: 1px solid #1E1E2A;
+    min-width: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s ease-in-out;
+}
+
+a:hover{
+    background-color: #CFE2E1ff;
+}
+/* .container{
+
+}
+.footer{
+
+} */
 h1{
     font-size: 50px;
     color: #D8E8DFff;
     font-family: 'Lobster', cursive;
     background-color: #AA8975ff;
     text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 4px;
 }
 h2{
     background-color: #AA8975ff;
+    text-transform: uppercase;
+    letter-spacing: 4px;
 }
 img{
     height: 280px;
@@ -23,8 +75,9 @@ strong{
     font-style: oblique;
     background-color: #AA8975ff;
 }
+
 #lista{
-    background-image: url("imagens/banner.jpg");
+    
     background-size: 600px;
     background-repeat: no-repeat;
     background-position: center;
@@ -32,7 +85,7 @@ strong{
 }
 a{
     font-size: 25px;
-    color: #D8E8DFff;
+    /* color: #D8E8DFff; */
     background-color: #5E6266ff;
 }
 .php{
@@ -55,6 +108,6 @@ a{
     margin: 2px;
     padding: 50px;
 }
-ul li:nth-child(odd){
-    background-color: #AA8975ff;
-}
+/* ul li:nth-child(odd){
+    background-color: #AA8975ff; 
+} */
