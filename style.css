@@ -6,10 +6,10 @@
     font-family: 'Balsamiq Sans', cursive;
     color: #1E1E2A;
 }
-body{
+body {
     background-color: #CFE2E1ff;
 }
-.header-container{
+.header-container {
     height: 100vw;
     width: 100vw;
     background-color: #CFE2E1ff;
@@ -26,11 +26,11 @@ body{
     padding: 0 112px;
     position: relative;
 }
-.social-midia{
+.social-midia {
     margin-top: 1rem;
     display: flex;
 }
-.social-midia a{
+.social-midia a {
     text-decoration: none;
     color: #1E1E2A;
     padding: 1rem 4rem;
@@ -41,16 +41,50 @@ body{
     justify-content: center;
     transition: .5s ease-in-out;
 }
-
-a:hover{
+a:hover {
     background-color: #CFE2E1ff;
 }
-/* .container{
-
+/* menu hanburger */
+.checkbox-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.footer{
-
-} */
+.checkbox{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 9999;
+    transition: 400ms ease-in-out 0s;
+}
+.checkbox .trace{
+    width: 50px;
+    height: 2px;
+    background-color: #1E1E2A;
+    position: absolute;
+    border-radius: 4px;
+    transition: 0.5s ease-in-out;
+}
+.checkbox .trace:nth-child(1){
+    top: 26px;
+    transform:rotate(z);
+}
+.checkbox .trace:nth-child(2){
+    top: 46px;
+    transform:rotate(z);
+}
+.checkbox .trace:nth-child(3){
+    top: 66px;
+    transform:rotate(z);
+}
+#toggle{
+    display: none;
+}
 h1{
     font-size: 50px;
     color: #D8E8DFff;
