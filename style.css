@@ -130,7 +130,8 @@ h2 {
     transition: 400ms ease-in-out 0s;
 
 }
-.menu-itens{
+
+.menu-itens {
     position: fixed;
     top: 0;
     left: 0;
@@ -143,10 +144,12 @@ h2 {
     visibility: hidden;
     transition: 400ms ease-in-out 0s;
 }
-.menu-intens ,ul {
+
+.menu-itens ul {
     list-style-type: none;
 }
-.menu-intens ul li a{
+
+.menu-itens ul li a {
     margin: 10px 0;
     color: #1E1E2A;
     text-decoration: none;
@@ -154,42 +157,140 @@ h2 {
     letter-spacing: 4px;
     font-size: 40px;
 }
+
 /* fim menu */
 
 /* animaçãqo do menu */
 
-#toggle:checked ~ .checkbox .trace:nth-child(1){
+#toggle:checked~.checkbox .trace:nth-child(1) {
     transform: rotate(45deg);
     top: 47px;
 }
 
-#toggle:checked ~ .checkbox .trace:nth-child(2){
+#toggle:checked~.checkbox .trace:nth-child(2) {
     transform: translate(-100px);
     width: 30px;
     visibility: hidden;
     opacity: 0;
 }
 
-#toggle:checked ~ .checkbox .trace:nth-child(3){
+#toggle:checked~.checkbox .trace:nth-child(3) {
     transform: rotate(-45deg);
     top: 48px;
-} 
+}
 
-#toggle:checked ~ .checkbox{
+#toggle:checked~.checkbox {
     background-color: #ffffff;
 
 }
 
-#toggle:checked ~ .menu{
+#toggle:checked~.menu {
     box-shadow: 0px 0px 0px 100vmax #ffffff;
     z-index: 1;
 }
 
-#toggle:checked ~ .menu-itens {
+#toggle:checked~.menu-itens {
     visibility: visible;
     opacity: 1;
 }
+
 /* fim da animação */
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 3rem 0;
+}
+
+.card-contaner {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+}
+
+.card {
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    margin: 3ren 0 0 0;
+    align-items: center;
+    justify-content: center;
+    background-color: #AA8975ff;
+    background-image: url(/imagens/perfil2.jpg);
+    background-position: center;
+    background-size: cover;
+    filter: grayscale(.8);
+    color: #1E1E2A;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+.card-text{
+    width: 40%;
+    letter-spacing: 1px;
+    color: rgb(109, 109, 109);
+}
+.card-wrapper{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.card-wrapper::before{
+    content: ('');
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    display: block;
+    border: 1px solid #ffffff;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+.card-wrapper h2{
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin: 0;
+    transition: 0.5s ease-in-out;
+}
+.card-wrapper p {
+    font-size: 0;
+    visibility: hidden;
+    opacity: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.5s ease-in-out;
+}
+.card:hover {
+    filter: unset;
+}
+
+.card:hover ~ .card-wrapper::before{
+    height: 240px;
+    width: 240px;
+    opacity: 1;
+}
+.card:hover ~ .card-wrapper p{
+    opacity: 1;
+    visibility: visible;
+    font-size: 14px;
+}
+
+.footer{
+    width: 100%;
+    height: 100%;
+    background-color: beige;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1E1E2A;
+}
+
 img {
     height: 280px;
 }
@@ -209,9 +310,10 @@ strong {
     background-position: center;
     width: 600px;
 }
- a {
+
+a {
     font-size: 25px;
-    color: #D8E8DFff; 
+    color: #D8E8DFff;
     background-color: #5E6266ff;
 }
 
@@ -241,7 +343,7 @@ a:hover {
     right: 40%;
     margin: 2px;
     padding: 50px;
-}  
+}
 
 /* ul li:nth-child(odd){
     background-color: #AA8975ff; 
