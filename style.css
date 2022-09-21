@@ -127,7 +127,7 @@
   }
   
   .background-color-Sobre{
-    background-color: #191919;
+    background-color:#101010;
     width: 100%;
     padding: 100px 0px;
   
@@ -191,7 +191,7 @@
     cursor: pointer;
   }
   
-  .Container-serviços{
+  .Container-Projetos{
     background-color: #101010;
     width: 100%;
     padding: 100px 0px;
@@ -250,6 +250,23 @@
     margin-top: 25px;
   }
   
+  .Container-habilidade{
+    width: 100%;
+    height: 290px;
+    background-color: #191919;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+  }
+
+  .Container-habilidade ul{
+    color: #fcfc;
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 25px;
+  }
+
   .me-contate {
     width: 100%;
     height: 290px;
@@ -264,6 +281,21 @@
     color: #fff;
     font-size: 30px;
     font-weight: bold;
+    margin-bottom: 25px;
+  }
+
+  .me-contate h2{
+    color: #fff;
+    font-size: 75px;
+    width: 1130px;
+    margin: 30px auto;
+    text-align: center;
+  }
+  
+  .me-contate ul{
+    color: #fcfc;
+    font-size: 16px;
+    line-height: 27px;
     margin-bottom: 25px;
   }
   
