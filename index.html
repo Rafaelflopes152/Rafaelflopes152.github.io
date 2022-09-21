@@ -1,149 +1,115 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Rafael De Figueiredo Lopes</title>
-    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio website</title>
 </head>
-
 <body>
-    <header class="header-container">
-        <div class="header">
-            <div class="checkbox-container">
-                <div class="checkbox-wrapper">
-                    <input type="checkbox" id="toggle">
-                    <label for="toggle" class="checkbox">
-                        <div class="trace"></div>
-                        <div class="trace"></div>
-                        <div class="trace"></div>
-                    </label>
-                    <div class="menu"></div>
-                    <div class="menu-itens">
-                        <ul id="lista">
-                            <li><a href="#sobre">Sobre Mim</a></li>
-                            <ul>
-                                <li><a href="#habilidade">Habilidades</a></li>
-                                <li><a href="#formacao">Formação</a></li>
-                                <li><a href="#porque">Por que a Trybe???</a></li>
-                                <li><a href="#projetos">Projetos</a></li>
-                                <li><a href="#contatos">Contatos</a></li>
-                                <li><a href="#interesses">Sites de Interesse</a></li>
-                            </ul>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <h1>Rafael De F. Lopes</h1>
-        <h2>Estudante de Developer Web</h2>
-        <div class="social-midia">
-            <a href="#">Linkedin</a>
-            <a href="#">Github</a>
-        </div>
-    </header>
-    <main class="container">
-        <div>
-            <h1>Rafael De Figueiredo Lopes</h1>
-            <div class="image-container">
-                <img id="minha_foto" src="./imagens/perfil.jpg" alt="Rafael De Figueiredo Lopes">
-                <p class="descrficao"> Olá Sou o <strong><i>Rafael</i></strong>, sou aluno do curso de desenvolvedor web
-                </p>
-            </div>
-        </div>
+    <!---Cabeçalho-Main-->
 
-        <h2 id="sobre">Sobre mim</h2>
-        <p>Me chamo <strong><i>Rafael</i></strong>, tenho 38 anos e atualmente estou estudando na Trybe para me tornar
-            uma
-            pessoa desenvolvedora web
-            fullstack.
-            <strong><i>Sou brasileiro</i></strong>, casado e pai de duas crianças, localizado especificamente em
-            <strong><i>São Paulo</i></strong>.
-        </p>
-        <p>Pode me chamar no Slack para conversarmos! </p>
-        <h2 id="habilidade">Habilidades</h2>
-        <ul>
-            <li>PHP</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>javascript</li>
-        </ul>
-        <h2 id="formacao">Formação</h2>
-        <p>
-            Ciencias da Computação - Imcompleto
-        </p>
-        <h2 id="porque">Por que a Trybe?</h2>
-        <p>Eu escolhi a Trybe por ela se comprometer integralmente com o sucesso de todos os alunos que a escolheram,
-            pois
-            só começamos a pagar quando estivermos trabalhando e ganhando uma remuneração mínima.</p>
-        <p>Esse compromisso de "eles só ganham se eu ganhar" meu deu uma confiança muito grande, até porque o curso não
-            é
-            barato, não é mesmo? Então tendo essa segurança em mim, foi muito fácil fazer essa escolha!</p>
-        <p>Depois do primeiro dia, onde conhecemos todas as pessoas que fazem isso tudo dar certo, ai que eu tive mais
-            certeza ainda porque só tem pessoas gente boa e que estão comprometidos em te ajudar!</p>
+    <div class="background">
+        <nav>
+            <h2 class="logo">Portfo<span>lio</span></h2><!--Logo-->
+            <ul class="cabeçalho-link">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Sobre mim</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Habilidades</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul><!--cabeçalho-link-->
+            <a href="#" class="btn">Subscribe</a>
+        </nav>
 
-        <h2 id="projetos">Projetos criados na Trybe</h2>
-        <div class="card-contaner">
-            <div class="card">
-                <div class="card-wrapper">
-                    <h2>Project Pixels Art</h2>
-                    <p><a href="/pixelsArt/index.html" target="_blank">Vem ver</a></p>
-                </div>
-            </div>
-            <div class="card-text">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis sint, hic, autem libero eius
-                consectetur temporibus veniam veritatis laborum perferendis iure odio in. Iste deserunt unde quia minima
-                blanditiis accusantium.
-            </div>
-        </div>
-        <div class="card-contaner">
-            <div class="card">
-                <div class="card-wrapper">
-                    <h2>Project 2</h2>
-                    <p>Vem ver</p>
-                </div>
-            </div>
-            <div class="card-text">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis sint, hic, autem libero eius
-                consectetur temporibus veniam veritatis laborum perferendis iure odio in. Iste deserunt unde quia minima
-                blanditiis accusantium.
-            </div>
-        </div>
-        <div class="card-contaner">
-            <div class="card">
-                <div class="card-wrapper">
-                    <h2>Project 3</h2>
-                    <p>Vem ver</p>
-                </div>
-            </div>
-            <div class="card-text">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis sint, hic, autem libero eius
-                consectetur temporibus veniam veritatis laborum perferendis iure odio in. Iste deserunt unde quia minima
-                blanditiis accusantium.
-            </div>
-        </div>
-        <!-- <h2 id="projetos">Projetos criados na Trybe</h2>
-        <ul>
-            <li><a href="/pixelsArt/index.html" target="_blank">Project Pixels Art</a></li>
-        </ul> -->
-        <h2 id="interesses">Sites de Interesse</h2>
-        <ul>
-            <li><a href="https://www.cursoemvideo.com/" target="_blank">Curso em video</a></li>
-            <li><a href="https://www.crunchyroll.com/" target="_blank"> Animes</a></li>
-            <li><a href="https://betrybe.com" target="_blank">Curso de Full stack Devoloper Web</a></li>
-        </ul>
-        <h2 id="contatos">Contatos</h2>
-        <ul>
-            <li>Email</li>
-            <li>Telefone</li>
-            <li>Redes Sociais</li>
-        </ul>
-        <a href="#">voltar</a>
-    </main>
-    <footer class="footer">
-        Feito por Rafael De Figueiredo Lopes
+        <div class="Main">
+            <h4>Ola, meu nome é</h4>
+            <h1>Rafael de Fiqueiredo <span>Lopes</span></h1>
+            <h3>Eu sou um desenvolvedor web</h3>
+            <div class="Container-btn">
+                <form>
+                    <input type="email" nome="email" id="mail" placeholder="Envie seu Email">
+                    <input type="submit" name="submit" value="Começar">
+                </form>
+            </div><!--Container-btn-->
+        </div><!--Main-->
+    </div><!--background-->
+
+
+    <!--Começo-da-seção-sobre-->
+
+    <section class="background-color-Sobre">
+        <div class="main-sobre">
+            <img src="/img/main-img.jpg">
+            <div class="Text-sobre">
+                <h2>Sobre-Mim</h2>
+                <h5>Desenvolvedor <span>Web</span></h5>
+                <p>Eu sou um Desenvolvedor web front-end. Eu posso fornecer codigos limpos de desing perfeito. E também fazer o website mais & mais interativo e com animação web. E posso Deixar seu site responsivo, e que ele acesse todos os usuarios, independente dos seus aparelhos dispositivos.</p>
+                <button type="button">Vamos conversa</button><!--Button-->
+            </div><!--Text-sobre-->
+        </div><!--main-sobre-->
+    </section><!--background-color-Sobre-->
+
+    <!--Começo-da-seção-nossos-serviços-->
+
+    <div class="Container-serviços">
+        <div class="title">
+            <h2>Nossos Serviços</h2>
+        </div><!--title-->
+
+        <div class="Caixa">
+            <div class="Card">
+                <i class="fas fa-bars"></i>
+                <h5>Desenvolvedor web</h5>
+                <div class="Paragrafo-button">
+                    <p>Muitos sites devem ser contruido com dois principais objetivos: Primeiramente , ele precisar funcionar em todos os dispositivos. Segundo, Ele precisar ser o mais rapido possivel </p>
+                    <button type="button">Ler Mais</button><!--button-->
+                </div><!--Paragrafo-button-->
+            </div><!--Card-->
+
+            <div class="Card">
+                <i class="fas fa-user"></i>
+                <h5>Desenvolvedor web</h5>
+                <div class="Paragrafo-button">
+                    <p>Muitos sites devem ser contruido com dois principais objetivos: Primeiramente , ele precisar funcionar em todos os dispositivos. Segundo, Ele precisar ser o mais rapido possivel </p>
+                    <button type="button">Ler Mais</button><!--button-->
+                </div><!--Paragrafo-button-->
+            </div><!--Card-->
+
+            <div class="Card">
+                <i class="fas fa-bell"></i>
+                <h5>Desenvolvedor web</h5>
+                <div class="Paragrafo-button">
+                    <p>Muitos sites devem ser contruido com dois principais objetivos: Primeiramente , ele precisar funcionar em todos os dispositivos. Segundo, Ele precisar ser o mais rapido possivel </p>
+                    <button type="button">Ler Mais</button><!--button-->
+                </div><!--Paragrafo-button-->
+            </div><!--Card-->
+        </div><!--Caixa-->
+    </div><!--Conatiner-serviços-->
+
+    <!--Contatos-->
+    <div class="me-contate">
+        <p>Contate minha equipe para a gente criar um bonito site para você</p>
+        <button type="button">Enviar mensagem</button><!--button-->
+    </div><!--me-contate-->
+
+    <!--Rodapé--->
+    <footer >
+          <h6>Rafael de Figueiredo Lopes</h6>
+        <p>Para mais HTML E CSS, tutorias - por favor clique no link abaixo para se inscrever no meu canal</p>
+        <div class="Redes-sociais" >
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-dribbble"></i></a>
+        </div><!--Redes-sociais-->
+        <span>Site ainda em desenvolvimento</span>
+        <p class="end">Inspirado no layout criado por Tahmid Ahmed</p>
     </footer>
-    <script type="text/javascript" src="/script.js"></script>
-</body>
 
+
+</body>
 </html>
