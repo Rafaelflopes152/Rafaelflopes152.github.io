@@ -1,137 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Portfolio website</title>
+    <title>Portifolio</title>
+    
 </head>
 <body>
-    <!---Cabeçalho-Main-->
-
-    <div class="background">
+    <header>
+        <h1>Dev <span>Saber</span></h1>
         <nav>
-            <h2 class="logo">Portfo<span>lio</span></h2><!--Logo-->
-            <ul class="cabeçalho-link">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#sobre">Sobre mim</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#habilidade
-                    ">Habilidades</a></li>
-                <li><a href="#contatos">Contatos</a></li>
-            </ul><!--cabeçalho-link-->
-            <a href="#" class="btn">Subscribe</a>
+            <ul class="navegacao-primaria">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#abolt">Abolt</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#Portifolio">Portifolio</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </nav>
-
-        <div class="Main">
-            <h4>Ola, meu nome é</h4>
-            <h1>Rafael de Fiqueiredo <span>Lopes</span></h1>
-            <h3>Eu sou um estudante para me tornar um Desenvolvedor  <span>Web</span></h3>
-            <div class="Container-btn">
-                <form>
-                    <input type="email" nome="email" id="mail" placeholder="Envie seu Email">
-                    <input type="submit" name="submit" value="Começar">
-                </form>
-            </div><!--Container-btn-->
-        </div><!--Main-->
-    </div><!--background-->
-    <!--Começo-da-seção-sobre-->
-    <section class="background-color-Sobre" id="sobre">
-        <div class="main-sobre">
-            <img src="/img/main-img.jpg">
-            <div class="Text-sobre">
-                <h2>Sobre-Mim</h2>
-                <h5>Desenvolvedor <span>Web</span></h5>
-                <p>Eu sou um Desenvolvedor web front-end. Eu posso fornecer codigos limpos de desing perfeito. E também fazer o website mais & mais interativo e com animação web. E posso Deixar seu site responsivo, e que ele acesse todos os usuarios, independente dos seus aparelhos dispositivos.</p>
-                <button type="button">Vamos conversa</button><!--Button-->
-            </div><!--Text-sobre-->
-            <a href="#">Inicio</a>
-        </div><!--main-sobre-->
-    </section><!--background-color-Sobre-->
-    <!-- Habilidades -->
-    <div class="Container-habilidade" id="habilidade"> 
-        <div class="title">
-            <h2 >Habilidades</h2>
-        </div><!--title-->
-        <ul>
-            <li>PHP</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>javascript</li>
-        </ul>
-    </div>
-    <!--Começo-da-seção-nossos-serviços-->
-    <div class="Container-Projetos" id="projetos">
-        <div class="title">
-            <h2 >Projetos</h2>
-        </div><!--title-->
-
-        <div class="Caixa">
-            <div class="Card">
-                <i class="fas fa-bars"></i>
-                <h5>Desenvolvedor web</h5>
-                <div class="Paragrafo-button">
-                    <p>Muitos sites devem ser contruidos com dois principais objetivos: Primeiramente , ele precisar funcionar em todos os dispositivos. Segundo, Ele precisar ser o mais rapido possivel </p>
-                    <button type="button">Ler Mais</button><!--button-->
-                </div><!--Paragrafo-button-->
-            </div><!--Card-->
-
-            <div class="Card">
-                <i class="fas fa-user"></i>
-                <h5>Desenvolvedor web</h5>
-                <div class="Paragrafo-button">
-                    <p>Muitos sites devem ser contruidos com dois principais objetivos: Primeiramente , ele precisar funcionar em todos os dispositivos. Segundo, Ele precisar ser o mais rapido possivel </p>
-                    <button type="button">Ler Mais</button><!--button-->
-                </div><!--Paragrafo-button-->
-            </div><!--Card-->
-
-            <div class="Card">
-                <i class="fas fa-bell"></i>
-                <h5>Desenvolvedor web</h5>
-                <div class="Paragrafo-button">
-                    <p>Muitos sites devem ser contruidos com dois principais objetivos: Primeiramente , ele precisar funcionar em todos os dispositivos. Segundo, Ele precisar ser o mais rapido possivel </p>
-                    <button type="button">Ler Mais</button><!--button-->
-                </div><!--Paragrafo-button-->
-            </div><!--Card-->
-            <a href="#">Inicio</a>
-        </div><!--Caixa-->
-    </div><!--Conatiner-serviços-->
-
-    <!--Contatos-->
-    <div class="me-contate" id="contatos">
-        <h2 >Contatos</h2>
-        <ul>
-            <li>Email: <span> rafaelflopes18@gmail.com</span>  </li>
-            <li>Whatsapp: <span> (11)9.5246-0304</span></li>
-            <li>
-                <a
-                href="https://drive.google.com/file/d/1HZQ9HC3Rh7F6UCIdiZrjhtJ1tjE4PBct/view?usp=sharing"
-                >
-                    Curriculum par download aqui
-                </a>
-            </li>
-        </ul>
-        <a href="#">Inicio</a>
-        <button type="button">Enviar mensagem</button><!--button-->
-    </div><!--me-contate-->
-    <!--Rodapé--->
-    <footer >
-        <h6>Rafael de Figueiredo Lopes</h6>
-        <p>Para mais HTML E CSS, tutorias - por favor clique no link abaixo para se inscrever no meu canal</p>
-        <div class="Redes-sociais" >
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-dribbble"></i></a>
-        </div><!--Redes-sociais-->
-        <span>Site ainda em desenvolvimento</span>
-        <p class="end">Inspirado no layout criado por Tahmid Ahmed</p>
-        <a href="#">Inicio</a>
-    </footer>
-
-
+    </header>
+    <section aria-label="Seção curriculum downloads Rafael" class="sectin-div">
+        <div>
+            <h2>Hi There I'm Rafael</h2>
+            <h2 class="digitando">Web Developer and UX/UI Designer</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo qui beatae fugit ab facere sunt quas reprehenderit, totam ex perferendis.</p>
+            <a href="#">Download CV</a>
+        </div>
+        <img src="img/eu.png" alt="Imagem de um desenvolvedor web" class="imagem-hero">
+    </section>
+    <script src="script.js"></script>
 </body>
 </html>
