@@ -425,3 +425,8 @@ main .sobre {
     border-bottom: 2px solid red;
     border-left: 2px solid red;
 }
+
+/* SOBRE MINHAS EXPERIÊNCIAS */
+.my_resume {
+    color: #f7f7f7;
+}
