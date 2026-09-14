@@ -430,3 +430,154 @@ main .sobre {
 .my_resume {
     color: #f7f7f7;
 }
+
+.resume_gerenico {
+    padding: 30px;
+    display: grid;
+    justify-content: center;
+    align-items: start;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.resume_gerenico h2 {
+    font-family: 'Poppins';
+    font-size: 1.5rem;
+    background-color: #ff5d56;
+    justify-self: start;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.resume_gerenico h2 i {
+    margin-right: 10px;
+}
+
+.experience {
+    margin-bottom: 30px;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.education {
+    margin-bottom: 30px;
+    grid-column: 2;
+    grid-row: 1;
+}
+.experience_content ul {
+    color: #ff5d56;
+    gap: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.resume_gerenico .experience_content div {
+    /*animation: ladoSecao .5s ease-in-out forwards;
+    display: none;*/
+    background-color: #222;
+    padding: 40px;
+    position: relative;
+}
+
+.resume_gerenico .experience_content div::before {
+    content: '';
+    display: inline-block;
+    border-right: 30px solid transparent;
+    border-bottom: 30px solid #222;
+    top: -20px;
+    left: 30px;
+    position: absolute;
+}
+
+.resume_gerenico .experience_content div span {
+    color: #dc3545;
+    font-family: 'Poppins';
+    font-weight: bold;
+}
+
+.resume_gerenico .experience_content div h3 {
+    font-family: 'Poppins';
+    margin: 10px 0;
+}
+
+.resume_gerenico .experience_content div p {
+    color: #707070;
+    font-size: 1.1rem;
+}
+/*
+.resume_gerenico .experience_content div.ativo {
+    display: block;
+    padding: 40px;
+}
+
+.experience_content ul li.ativo {
+    color: #3e3d3d;
+}*/
+
+/* MEUS DIPROMAS E CURSOS */
+
+.resume_gerenico .education_content div {
+    /*animation: sobeSecao .5s ease-in-out forwards;
+    display: none;*/
+    background-color: #222;
+    padding: 40px;
+    position: relative;
+}
+
+.resume_gerenico .education_content ul {
+    color: #ff5d56;
+    gap: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.resume_gerenico .education_content div::before {
+    content: '';
+    display: inline-block;
+    border-right: 30px solid transparent;
+    border-bottom: 30px solid #222;
+    top: -20px;
+    left: 30px;
+    position: absolute;
+}
+
+.resume_gerenico .education_content div span {
+    color: #dc3545;
+    font-family: 'Poppins';
+    font-weight: bold;
+}
+
+.resume_gerenico .education_content div h3 {
+    font-family: 'Poppins';
+    margin: 10px 0;
+}
+
+.resume_gerenico .education_content div p {
+    color: #707070;
+    font-size: 1.1rem;
+}
+/*
+.resume_gerenico .education_content ul li.ativo {
+    color: #2f2b2b;
+}
+
+.resume_gerenico .education_content div.ativo {
+    display: block;
+    padding: 40px;
+    animation: sobeSecao .5s ease-in-out forwards;
+}*/
+
+/* SOBRE CURSOS E SKILLS */
+.cursos {
+    margin-top: 50px;
+    display: grid;
+    gap: 30px;
+    justify-content: center;
+    align-items: start;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 30px;
+}
