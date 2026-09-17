@@ -474,8 +474,8 @@ main .sobre {
 }
 
 .resume_gerenico .experience_content div {
-    /*animation: ladoSecao .5s ease-in-out forwards;
-    display: none;*/
+    animation: ladoSecao .5s ease-in-out forwards;
+    display: none;
     background-color: #222;
     padding: 40px;
     position: relative;
@@ -506,7 +506,7 @@ main .sobre {
     color: #707070;
     font-size: 1.1rem;
 }
-/*
+
 .resume_gerenico .experience_content div.ativo {
     display: block;
     padding: 40px;
@@ -514,13 +514,13 @@ main .sobre {
 
 .experience_content ul li.ativo {
     color: #3e3d3d;
-}*/
+}
 
 /* MEUS DIPROMAS E CURSOS */
 
 .resume_gerenico .education_content div {
-    /*animation: sobeSecao .5s ease-in-out forwards;
-    display: none;*/
+    animation: sobeSecao .5s ease-in-out forwards;
+    display: none;
     background-color: #222;
     padding: 40px;
     position: relative;
@@ -560,7 +560,7 @@ main .sobre {
     color: #707070;
     font-size: 1.1rem;
 }
-/*
+
 .resume_gerenico .education_content ul li.ativo {
     color: #2f2b2b;
 }
@@ -569,7 +569,7 @@ main .sobre {
     display: block;
     padding: 40px;
     animation: sobeSecao .5s ease-in-out forwards;
-}*/
+}
 
 /* SOBRE CURSOS E SKILLS */
 .cursos {
