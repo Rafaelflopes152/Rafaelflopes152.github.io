@@ -792,7 +792,7 @@ main .sobre {
     border-radius: 4px;
 }
 
-.projects a {
+.projects .btn {
     background-color: #222;
     text-decoration: none;
     padding: 20px 40px;
@@ -864,4 +864,3 @@ footer .footer_comercial {
     margin: 90px 0;
     font-family: 'Poppins';
 }
-
