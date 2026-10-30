@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pedra, Papel e Tesoura Infinito</title>
+    <!-- Aqui futuramente você vai linkar seu arquivo CSS -->
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<body>
+    <header>
+        <h1>Pedra, Papel e Tesoura Infinito</h1>
+        <p>Desafie a Inteligência Artificial!</p> 
+    </header>
+
+    <main>
+        <section class="game-container">
+            <!-- Seção do Placar -->
+            <div class="score-board">
+                <div class="player-score">
+                    <h2></h2>
+                    <p id="player-score-display">0</p> <!-- ID para o JavaScript atualizar -->
+                </div>
+                <div class="ai-score">
+                    <h2></h2>
+                    <p id="ai-score-display">0</p> <!-- ID para o JavaScript atualizar -->
+                </div>
+            </div>
+
+            <!-- Seção das Escolhas e Resultado -->
+            <div class="choices-and-result">
+                <p>Sua escolha: <span id="player-choice-display"></span></p>
+                <p>Escolha da IA: <span id="ai-choice-display"></span></p>
+                <h3 id="round-result">Faça sua jogada!</h3> <!-- ID para o JavaScript exibir o resultado -->
+            </div>
+
+            <!-- Seção dos Botões de Jogada -->
+            <div class="buttons-container">
+                <button id="rock-btn"><img src="img/pedra.png" alt="Pedra" width="70"></button>
+                <button id="paper-btn"><img src="img/papel.png" alt="Papel" width="70"></button>
+                <button id="scissors-btn"><img src="img/tesoura.png" alt="Tesoura" width="70"></button>
+            </div>
+
+            <!-- Botão de Reset (opcional, mas bom para reiniciar o jogo) -->
+            <button id="reset-btn" style="margin-top: 20px;">Reiniciar Jogo</button>
+            <a href="../../index.html" style="display: block; margin-top: 20px;">Voltar para a Página Inicial</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Rafael De Figuereido Lopes - Projeto DevClub (setembro) </p>
+    </footer>
+    <!-- AQUI ESTÁ A MUDANÇA PRINCIPAL: A INCLUSÃO DO SEU SCRIPT JAVASCRIPT -->
+    <script src="script.js"></script>
+</body>
+</html>

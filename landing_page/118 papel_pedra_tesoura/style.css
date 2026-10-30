@@ -1,0 +1,181 @@
+/* style.css */
+
+/* Estilos globais para o corpo da página */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5; /* Fundo cinza claro - serve como fallback se a imagem não carregar */
+    color: #333;
+    margin: 0;
+    padding: 20px;
+
+    /* Mágica da Centralização Total com Flexbox! */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: center;
+
+    /* **NOVOS ESTILOS PARA O PLANO DE FUNDO COM SÍMBOLOS** */
+    background-image: url('img/simbolos.png'); /* Caminho para a imagem. A URL é relativa ao arquivo CSS */
+    background-repeat: repeat; /* A imagem não vai se repetir, aparece apenas uma vez */
+    background-position: center center; /* Centraliza a imagem no meio da tela (horizontal e vertical) */
+    background-size: 300px; /* Define um tamanho fixo para a imagem, ajuste conforme necessário. */
+                             /* Você pode testar 'contain' (para caber na tela) ou 'cover' (para preencher a tela) */
+    background-attachment: fixed; /* A imagem de fundo fica fixa enquanto o conteúdo rola (se houver rolagem) */
+    /* background-blend-mode: multiply; */ /* Opcional: para misturar a imagem com a cor de fundo */
+    /* opacity: 0.3; */ /* CUIDADO: Isso aplicaria opacidade a TUDO dentro do body, incluindo o texto. */
+}
+
+/* Estilos para o cabeçalho */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    background-color: #FFFFFF;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px; /* Mantém a largura máxima do header */
+}
+
+header h1 {
+    color: #4CAF50;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* --- NOVO SELETOR PARA O ELEMENTO MAIN --- */
+main {
+    width: 100%;
+    max-width: 500px; /* Garante que o main tenha a mesma largura máxima do header */
+    margin-bottom: 30px; /* Adiciona um espaço abaixo do main */
+}
+/* --- FIM DO NOVO SELETOR --- */
+
+/* Estilos para o container principal do jogo */
+.game-container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    /* REMOVA ESTAS LINHAS DO .game-container, pois o main já as define */
+    /* width: 100%; */
+    /* max-width: 500px; */
+    text-align: center;
+    /* margin-bottom: 30px; -- Esta margem pode ser movida para o 'main' se você quiser espaço entre main e footer*/
+}
+
+
+/* Estilos para o placar */
+.score-board {
+    display: flex; /* Transforma o placar em um container flexível */
+    justify-content: space-around; /* Distribui o espaço igualmente entre os itens */
+    align-items: center; /* Alinha os itens verticalmente no centro */
+    margin-bottom: 30px; /* Espaço abaixo do placar */
+    border: 2px solid #eee; /* Borda sutil */
+    background-image: url('img/jogado_IA.png'); /* Caminho para a sua imagem de fundo do placar */
+    background-size: cover; /* Ajusta a imagem para cobrir todo o fundo do placar */
+    background-position: center center; /* Centraliza a imagem no placar */
+    background-repeat: no-repeat; /* Garante que a imagem não se repita */
+    border-radius: 10px;
+    padding: 15px 0;
+}
+
+.player-score, .ai-score {
+    flex: 1; /* Faz com que cada placar ocupe espaço igual */
+    text-align: center; /* Centraliza o texto dentro de cada placar */
+}
+
+.score-board h2 {
+    font-size: 1.5em;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.score-board p {
+    font-size: 2.5em; /* Tamanho grande para a pontuação */
+    font-weight: bold;
+    color: #4CAF50; /* Cor da pontuação */
+}
+
+/* Estilos para a seção de escolhas e resultado */
+.choices-and-result {
+    margin-bottom: 30px;
+}
+
+.choices-and-result p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.choices-and-result span {
+    font-weight: bold;
+    color: #007bff; /* Cor para as escolhas */
+}
+
+#round-result {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #e91e63; /* Cor destacada para o resultado */
+    margin-top: 20px;
+}
+
+/* Estilos para o container dos botões */
+.buttons-container {
+    display: flex; /* Transforma o container dos botões em flexível */
+    justify-content: center; /* Centraliza os botões horizontalmente */
+    gap: 15px; /* Espaço entre os botões */
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+/* Estilos para os botões */
+button {
+    background-color: #007bff; /* Azul vibrante */
+    color: white; /* Texto branco */
+    border: none; /* Remove a borda padrão */
+    padding: 15px 25px; /* Espaçamento interno */
+    border-radius: 8px; /* Cantos arredondados */
+    font-size: 1.1em;
+    cursor: pointer; /* Indica que é clicável */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transição suave para hover */
+    flex-grow: 1; /* Permite que os botões cresçam para ocupar o espaço */
+    max-width: 120px; /* Limita a largura máxima de cada botão */
+}
+
+button:hover {
+    background-color: #0056b3; /* Azul mais escuro ao passar o mouse */
+    transform: translateY(-2px); /* Efeito de "levantar" ao passar o mouse */
+}
+
+button:active {
+    transform: translateY(0); /* Volta ao normal ao clicar */
+    background-color: #004085;
+}
+
+/* Estilo específico para o botão de reset */
+#reset-btn {
+    background-color: #6c757d; /* Cinza para o botão de reset */
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 1em;
+    max-width: 180px; /* Ajusta a largura do botão de reset */
+}
+
+#reset-btn:hover {
+    background-color: #5a6268;
+}
+
+/* Estilos para o rodapé */
+footer {
+    margin-top: auto; /* Empurra o rodapé para o final, se houver espaço */
+    padding-top: 20px;
+    text-align: center; /* Centraliza o texto do rodapé */
+    font-size: 0.9em;
+    color: #777;
+}
