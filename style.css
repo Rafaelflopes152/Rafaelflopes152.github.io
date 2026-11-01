@@ -814,6 +814,72 @@ main .sobre {
     }
 }
 
+/* Catalogo */
+.catalog {
+    padding: 30px;
+    display: grid;
+    gap: 30px;
+    justify-content: center;
+    background-color: #151515;
+}
+
+.catalog ul {
+    justify-content: center;
+    display: flex;
+    gap: 30px;
+}
+
+.catalog_models ul li {
+    cursor: pointer;
+    font-family: 'Poppins';
+    background-color: #222;
+    border: 1px solid #333;
+    color: #707070;
+    padding: 6px 20px;
+}
+
+.catalog_models ul li.ativo {
+    background-color: #982BFF;
+    color: #151515;
+    font-weight: bold;
+}
+
+.catalog_armazenamento ul {
+    display: grid;
+    margin-top: 60px;
+    gap: 20px;
+    justify-content: center;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.catalog_armazenamento ul li {
+    display: none;
+    max-width: 100%;
+    height: 100%;
+}
+
+.catalog_armazenamento ul li.ativo {
+    display: block;
+    animation: animationButton 2s ease-in-out forwards;
+}
+
+.catalog_armazenamento ul li img {
+    cursor: pointer;
+    max-width: 100%;
+    height: 100%;
+    border-radius: 4px;
+}
+
+.catalog .btn {
+    background-color: #222;
+    text-decoration: none;
+    padding: 20px 40px;
+    justify-self: center;
+    border-radius: 3px;
+    color: #707070;
+    border: 1px solid #333;
+}
+
 /* FOOTER */
 
 footer {
